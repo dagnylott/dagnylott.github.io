@@ -552,11 +552,13 @@
 #transition-projects-pic{
     background: url('IMG_1207.HEIC.jpeg') center no-repeat;
     background-size: 100%;
+    max-height: 400px;
 }
 
 #transition-photography-pic{
     background: url('IMG_4039.JPG') center no-repeat;
     background-size: 100%;
+    max-height: 400px;
 }
 
 .section-header {
