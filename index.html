@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dagny Lott</title>
+        <meta charset = UTF-8 name = "description" content = "Dagny Lott's Engineering Portfolio"> <!-- *Add Description* -->
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "Styles.css">
+        <script src = "./Script.js" defer></script>
+    </head>
+
+    <main id = container>
+        <section data-index  id = home>
+            <img src="Images/Backgrounds/IMG_5054.JPG" alt="" class= "parallax homeParPosition">
+            <div>
+                <h1 id = my-name>Dagny Lott</h1>
+            </div>
+        </section>
+        <header id = main-header>
+            <nav id = "navbar">
+                <div class = newline>
+                    <a href = "javascript:void();" class = "toggle-button">
+                        <span class = "bar"></span>
+                        <span class = "bar1"></span>
+                        <span class = "bar2"></span>
+                    </a>
+                </div>
+                <div class = newline2>
+                    <a href = "javascript:void();" class = "toggle-button2">
+                        <span class = "bar"></span>
+                        <span class = "bar1"></span>
+                        <span class = "bar2"></span>
+                    </a>
+                </div>
+                <div id = "navbar-links" ></div>
+                    <ul class = links>
+                        <li><a data-page = "about" class = "about1" href ="#"><p>ABOUT ME</p></a></li>
+                        <li><a data-page = "projects" class = "projects1" href ="#"><p>PROJECTS</p></a></li>
+                        <li><a data-page = "photography" class = "photography1" href ="#"><p>PHOTOGRAPHY</p></a></li>
+                        <li><a data-page = "skills" class = "skills1" href ="#"><p>SKILLS & CONTACT</p></a></li>
+                        <div class = "bubble"></div>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section data-index = 0 id = "about" class = "section">
+            <h2 class = "welcome">Hi, welcome to my website! <br> My name is Dagny.</h2>
+            <div class = sub-section>
+                <img id = intro-photo-me src = "Images/IMG_3843.jpg">
+                <p id = about-me-description> I am a rising sophomore in
+                Mechanical Engineering at the University of Pennslyvania. When
+                I'm not in one of the engineering buildings, I'm probably
+                practicing with the Women's Ultimate team or setting up my
+                hammock on the campus lawn. But, currently I am taking a year
+                off from school to explore engineering and gain real-world
+                experience outside of the classroom... and take up hobbies such
+                as rollerblading.</p>
+            </div>
+        </section>
+        <article>
+            <div id = transition-projects-pic data-rate = "0.3" class = "scroll">
+                <h1 class = text-wrapper>PROJECTS</h1>
+            <div>
+        </article>
+        <!--section >
+            <h2 class = section-header>PROJECTS</h2>    
+        </section-->
+        <section data-index = 1 id = "projects" class = "section">
+            <article>
+                <h2 class = mini-section-header>Matlab</h2>
+                <p class = project-description>In the spring, the Washington
+                Post released a <a class = in-text-link href =
+                "https://www.washingtonpost.com/graphics/2020/world/corona-simulator/"
+                target = "_blank">model</a> that measured the effect of social
+                distancing on the spread of COVID-19. Although their model did
+                not have scientific importance, I thought it did a great job of
+                conveying to the reader the impact of social distancing on
+                flattening the curve. As shown below, my model mimicked the
+                Post's graph and their ball simulation. The Matlab skills that I
+                used were: modeling particle dynamics, graphics, real-time
+                animation, user interaction, and data analysis. I learned a lot
+                more about creating buttons and callback functions that interact
+                with the user.
+                <br> 
+                <br>
+                The main difference between my
+                model and the Washington Post's is that the user can adjust two
+                parameters. This gives the user a lot more information and prevents them from 
+                rewatching the same visualization. For
+                context, a Gallup poll at the end of April reported that
+                approximately 80% of the U.S. population was social distancing.
+                One could have also added multiple testing parameters such as
+                the number of tests, when the country started testing patients,
+                and whether testing is random or targeted.
+                    
+                </p>
+                <div class = horizontal>
+                    <video class = "video"src = "Images/MATLAB Covid-19 Tracking.mov" controls></video>
+                    <div id = matlab-photos>
+                        <span>
+                            <p>70% Social Distancing</p>
+                            <img class = SD-pic src = "Images/70 percent.png">
+                        </span>
+                        <span>
+                            <p>80% Social Distancing</p>
+                            <img class = SD-pic src = "Images/80 percent.png">
+                        </span>
+                        <span>
+                            <p>90% Social Distancing</p>
+                            <img class = SD-pic src = "Images/90 percent.png">
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <h2 class = mini-section-header>Laser Cutting</h2>
+                <div class = horizontal>
+                    <img id = rocking-horse src = "Images/RockingHorse.JPG">
+                    <p class = "side-description3 margin"> I designed this
+                    rocking horse when I started to learn SolidWorks in my Intro
+                    to Mechanical Design course. I used a laser cutter to cut
+                    clear acrylic for the horse's body and MDF for the base. The
+                    horse has three types of joints: press fittings, single-lap
+                    joints, and two t-nut/tab & slot connections. 
+                    </p>
+                </div>
+            </article>
+            <article>
+                <h2 class = mini-section-header>SolidWorks</h2>
+                <div class= horizontal>
+                    <div class = "bound">
+                        <video class =  video2 autobuffer muted preload>
+                            <source src= "Images/Soap DIspenser Trimmed 2.mov" controls>
+                        </video>
+                    </div>
+                    <p class = side-description3> In the same course, I used
+                    SolidWorks to CAD a model of one of the soap dispensers in
+                    my house. I took apart the soap dispenser and recorded basic
+                    measurements to get the proportions right. I also
+                    incorporated the motion of the spring in my model. The video
+                    seen on the left is a SolidWorks motion study.
+                    <br>
+                    <br>
+                    This class was extremely helpful when it came to learning
+                    the basics of SolidWorks, Laser Cutting, and 3D printing.
+                    Since then, I have gained a lot of experience with
+                    SolidWorks, among with many other things, during my 16-week internship at Temple Allen
+                    Industries (TAI) and I feel comfortable with large assembly
+                    models. The projects that I worked on at TAI have not been
+                    released to the public yet so I can not showcase them but I
+                    would love to talk about them in some capacity.
+                    </p>
+                </div>
+                <!--horizontal>
+                    <video class = video src = "Images/Soap Dispenser Full Video.mov" controls></video>
+                </horizontal-->
+            </article>
+            <article>
+                <h2 class = mini-section-header>Water Show</h2>
+                <p class = project-description>In the summer of 2017 and 2018 I directed my
+                local pool's Water Show –– an annual theatrical play in and
+                around the pool. Yes, that means wet costumes, choreographed
+                scenes with kickboards and noodles, splashing, and of course
+                more splashing! The first show was Robin
+                Hood followed by Mulan: both experiencees were as equally challenging
+                as they were rewarding. 
+                <br>
+                <br>
+                I typically opened sign-ups for pool members in mid-June and
+                started developing the choreographed scenes. In early July, I
+                began leading multiple practices a week (one for each group of
+                8-10 kids) and if the kids were lucky we would end practice with
+                popsicles. As practices continued, I was writing the script,
+                selecting a playlist, designing costumes, buying props, making
+                the set, and getting lifeguards to signup for the show. All of
+                these components would come together in the last week of July
+                for two dress rehearsals and the final show. 
+                 </p>
+                <div class = horizontal>
+                    <img class= watershow-pic src = "Images/WaterShow/Mulan Cast.JPG">
+                    <p class = "side-description ws">Some of the cast wait behind
+                        the front office for the show to commence while the Huns, in gray
+                        shirts, prepare to wage a battle with their swords and
+                        fierce face paint (which, spoiler alert, shortly washes off in the
+                        pool). </p>
+                </div>
+                <br>
+                <div class = horizontal>
+                    <p class = "side-description2 ws before">Fireworks explode to celebrate Mulan’s victory and a
+                        job well done. The cast members line up behind the diving board
+                        before jumping into the pool one-by-one and finishing the
+                        last choreographed routine.</p>
+                    <img class= watershow-pic src = "Images/WaterShow/Mulan Fireworks.JPG">
+                    <p class = "side-description2 ws after">Fireworks explode to celebrate Mulan’s victory and a
+                        job well done. The cast members line up behind the diving board
+                        before jumping into the pool one-by-one and finishing the
+                        last choreographed routine with Come On Eileen playing in
+                        the background.</p>
+                </div>
+            </article>
+            <article>
+                <h2 class = mini-section-header>Website</h2>
+                <p class = project-description>This website is coded entirely
+                from scratch using HTML, CSS, and Javascript. Before this, I had
+                no experience with web design but I was able to teach myself
+                enough of the basics from YouTube videos and through trial &
+                error. In addition to the interactive features, I also made the
+                website responsive. See what I mean by checking out this website on a
+                smaller device, like an phone or an ipad, or by simply adjusting the
+                size of your web browser. 
+            </article>
+        </section>    
+        <article>
+            <div id = transition-photography-pic data-rate = "0.3" class = "scroll">
+                <h1 class = text-wrapper>PHOTOGRAPHY</h1>
+            <div>
+        </article>
+        <!--h2 class = section-header>PHOTOGRAPHY</h2-->    
+        <section data-index = 2 id = photography class = section>
+            <article class = photography-description>
+                <h2 class = "mini-section-header margin">Photography</h2>
+                <p>*All photos on this website, except those of the Water Show, were taken by me* 
+                    <br>
+                    <br>
+                    I was introduced to photography during sophomore year of
+                    highschool in Visual Communications class. My teacher asked
+                    another student and myself to take pictures of the
+                    Graduation ceremonies and later, our highschool band's
+                    performance at the Eagles Half Time Show. The same teacher,
+                    who I still keep in touch with today, awarded us with two
+                    varsity letter awards.
+                    </p>
+                <!--p>Strath Haven Graduation Ceremony, 2018</p-->
+            </article>
+            <!--Slideshow 1-->
+            <article class = slideshow-container>
+                <div class = "mySlides fade">
+                    <div class = slide>
+                        <a class="prev  appearprev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column1">
+                                <h2 class = question>Strath Haven Graduation Ceremony, 2018</h2>
+                            </div>
+                            <div>
+                                <p class = counter> 1/9 </p>
+                                <img class = pic src= "Images/Graduation/Elena Dodge.jpg">
+                            </div>
+                            <div class = "column1">
+                            </div>
+                        </div>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class = "mySlides fade">
+                    <div class = slide>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column1">
+                                <h2 style = "opacity: 0" class = question>Strath Haven Graduation Ceremony, 2018</h2>
+                            </div>
+                            <div>
+                                <p class = counter> 2/9 </p>
+                                <img class = pic src= "Images/Graduation/Emma Young & Nathan Lee.jpg">
+                            </div>
+                            <div class = "column1">
+                            </div>
+                        </div>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class = "mySlides fade">
+                    <div class = slide>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column1">
+                                <h2 style = "opacity: 0" class = question>Strath Haven Graduation Ceremony, 2018</h2>
+                            </div>
+                            <div>
+                                <p class = counter> 3/9 </p>
+                                <img class = pic src= "Images/Graduation/Allison.jpg">
+                            </div>
+                            <div class = "column1">
+                            </div>
+                        </div>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class = "mySlides fade">
+                    <div class = slide>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column1">
+                                <h2 style = "opacity: 0" class = question>Strath Haven Graduation Ceremony, 2018</h2>
+                            </div>
+                            <div>
+                                <p class = counter> 4/9 </p>
+                                <img class = pic src= "Images/Graduation/Group Laughing.jpg">
+                            </div>
+                            <div class = "column1">
+                            </div>
+                        </div>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class = "mySlides fade">
+                    <div class = slide>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column1">
+                                <h2 style = "opacity: 0" class = question>Strath Haven Graduation Ceremony, 2018</h2>
+                            </div>
+                            <div>
+                                <p class = counter> 5/9 </p>
+                                <img class = pic src= "Images/Graduation/Unknown.jpg">
+                            </div>
+                            <div class = "column1">
+                            </div>
+                        </div>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class = "mySlides fade">
+                    <div class = slide>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column1">
+                                <h2 style = "opacity: 0" class = question>Strath Haven Graduation Ceremony, 2018</h2>
+                            </div>
+                            <div>
+                                <p class = counter> 6/9 </p>
+                                <img class = pic src= "Images/Graduation/Jeff Connor.jpg">
+                            </div>
+                            <div class = "column1">
+                            </div>
+                        </div>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class = "mySlides fade">
+                    <div class = slide>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column1">
+                                <h2 style = "opacity: 0" class = question>Strath Haven Graduation Ceremony, 2018</h2>
+                            </div>
+                            <div>
+                                <p class = counter> 7/9 </p>
+                                <img class = pic src= "Images/Graduation/Henry Dawes.jpg">
+                            </div>
+                            <div class = "column1">
+                            </div>
+                        </div>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class = "mySlides fade">
+                    <div class = slide>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column1">
+                                <h2 style = "opacity: 0" class = question>Strath Haven Graduation Ceremony, 2018</h2>
+                            </div>
+                            <div>
+                                <p class = counter> 8/9 </p>
+                                <img class = pic src= "Images/Graduation/Missy Williams.jpg">
+                            </div>
+                            <div class = "column1">
+                            </div>
+                        </div>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class = "mySlides fade">
+                    <div class = slide>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column1">
+                                <h2 style = "opacity: 0" class = question>Strath Haven Graduation Ceremony, 2018</h2>
+                            </div>
+                            <div>
+                                <p class = counter> 9/9 </p>
+                                <img class = pic src= "Images/Graduation/Olivia Fender.jpg">
+                            </div>
+                            <div class = "column1">
+                            </div>
+                        </div>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+            </article>
+            <article class = photography-description2>
+                <p>The editor of my local newspaper, <a class = in-text-link
+                href = "https://www.swarthmorean.com/" target = "_blank"><i>The
+                Swarthmorean</i></a>, liked my graduation photos. He decided to
+                publish them and asked if I would like to run their "Floating
+                Photographer" column, which had been my favorite section to read
+                in the newspaper so I quickly jumped on the offer. He would usually pick a
+                question or I would come up with one myself and walk around the
+                town center to collect responses. I really enjoyed talking to
+                people, of all ages and backgrounds, who I would not have met otherwise. I haven't
+                been doing any "official" photography recently but I'm planning
+                on pitching the idea of a Floating Photographer column to the
+                UPenn newspaper next year. </p>
+            </article>
+            <!--Slideshow 2-->
+            <article class = slideshow-container>
+                <div class = "mySlides2 fade">
+                    <div class = slide>
+                        <a class="prev display" onclick="plusSlides2(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column padright">
+                                <h2 class = question>What is the best Christmas or Hanukkah gift you ever got? Why?</h2>
+                                <p class = date>December, 2018</p>
+                            </div>
+                            <div>
+                                <p class = counter> 1/16</p>
+                                <div class = cc-picture>
+                                    <a class="prev display2" onclick="plusSlides2(-1)">&#10094;</a>
+                                    <img class = pic src="Images/Floating Photographer/Jasper Hals.JPG">
+                                    <a class="next display2" onclick="plusSlides2(1)">&#10095;</a>
+                                </div>
+                            </div>
+                            <div class = "column padleft">
+                                <div class = "person">
+                                    <div>
+                                        <h3 class = fp-name>Jasper Haals</h3> 
+                                        <p class = town> Swarthmore, PA</p>
+                                    </div>
+                                    <p class = response> "I got a dog
+                                        for Christmas... it was a cute beagle-corgi mix. I had
+                                        always wanted a dog."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="next display" onclick="plusSlides2(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class = "mySlides2 fade">
+                    <div class = slide>
+                        <a class="prev display" onclick="plusSlides2(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column padright">
+                                <h2 class = question>What is the best Christmas or Hanukkah gift you ever got? Why?</h2>
+                                <p class = date>December, 2018</p>
+                            </div>
+                            <div>
+                                <p class = counter> 2/16</p>
+                                <div class = cc-picture>
+                                    <a class="prev display2" onclick="plusSlides2(-1)">&#10094;</a>
+                                    <img class = pic src="Images/Floating Photographer/Rebecca & Bob Frick.JPG">
+                                    <a class="next display2" onclick="plusSlides2(1)">&#10095;</a>
+                                </div>
+                            </div>
+                            <div class = "column padleft">
+                                <div class = "person">
+                                    <div>
+                                        <h3 class = fp-name>Rebecca Frick (Left)</h3> 
+                                        <p class = town> Swarthmore, PA</p>
+                                    </div>
+                                    <p class = response> "In 3rd grade I
+                                        got a red bean bag chair. I have fond memories of sitting
+                                        in it in my bedroom."</p>
+                                </div>
+                                <div class = "person">
+                                    <div>
+                                        <h3 class = fp-name>Bob Frick (Right)</h3> 
+                                        <p class = town> Swarthmore, PA</p>
+                                    </div>
+                                    <p class = response> "On
+                                        Christmas Day, 32 years ago, I asked my now-wife to marry
+                                        me, and she said yes. That was the best gift I have ever
+                                        recieved."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="next display" onclick="plusSlides2(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class = "mySlides2 fade">
+                    <div class = slide>
+                        <a class="prev display" onclick="plusSlides2(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column padright">
+                                <h2 class = question>What is the best Christmas or Hanukkah gift you ever got? Why?</h2>
+                                <p class = date>December, 2018</p>
+                            </div>
+                            <div>
+                                <p class = counter> 3/16</p>
+                                <div class = cc-picture>
+                                    <a class="prev display2" onclick="plusSlides2(-1)">&#10094;</a>
+                                    <img class = pic src="Images/Floating Photographer/Muchir Barut & Daksha Nair.JPG">
+                                    <a class="next display2" onclick="plusSlides2(1)">&#10095;</a>
+                                </div>
+                            </div>
+                            <div class = "column padleft">
+                                <div class = "person">
+                                    <div>
+                                        <h3 class = fp-name> Muchir Barut (Left)</h3> 
+                                        <p class = town> Swarthmore, PA</p>
+                                    </div>
+                                    <p class = response> "A chinese operaface tassel."</p>
+                                </div>
+                                <div class = "person">
+                                    <div>
+                                        <h3 class = fp-name>Daksha Nair (Right)</h3> 
+                                        <p class = town> Swarthmore, PA</p>
+                                    </div>
+                                    <p class = response> "I got a nintendo switch for last Christmas!"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="next display" onclick="plusSlides2(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class = "mySlides2 fade">
+                    <div class = slide>
+                        <a class="prev display" onclick="plusSlides2(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column padright">
+                                <h2 class = question>What is the best Christmas or Hanukkah gift you ever got? Why?</h2>
+                                <p class = date>December, 2018</p>
+                            </div>
+                            <div>
+                                <p class = counter> 4/16</p>
+                                <div class = cc-picture>
+                                    <a class="prev display2" onclick="plusSlides2(-1)">&#10094;</a>
+                                    <img class = pic src="Images/Floating Photographer/Parker Thomas.JPG">
+                                    <a class="next display2" onclick="plusSlides2(1)">&#10095;</a>
+                                </div>
+                            </div>
+                            <div class = "column padleft">
+                                <div class = "person">
+                                    <div>
+                                        <h3 class = fp-name> Parker Thomas</h3> 
+                                        <p class = town> Swarthmore, PA</p>
+                                    </div>
+                                    <p class = response> "An electric
+                                        scooter... now my feet don't hurt from pedaling a
+                                        lot." </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="next display" onclick="plusSlides2(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class = "mySlides2 fade">
+                    <div class = slide>
+                        <a class="prev display" onclick="plusSlides2(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column padright">
+                                <h2 class = question>What is the best Christmas or Hanukkah gift you ever got? Why?</h2>
+                                <p class = date>December, 2018</p>
+                            </div>
+                            <div>
+                                <p class = counter> 5/16</p>
+                                <div class = cc-picture>
+                                    <a class="prev display2" onclick="plusSlides2(-1)">&#10094;</a>
+                                    <img class = pic src="Images/Floating Photographer/Victor Mair .jpg">
+                                    <a class="next display2" onclick="plusSlides2(1)">&#10095;</a>
+                                </div>
+                            </div>
+                            <div class = "column padleft">
+                                <div class = "person">
+                                    <div>
+                                        <h3 class = fp-name> Victor Mair</h3> 
+                                        <p class = town> Swarthmore, PA</p>
+                                    </div>
+                                    <p class = response> "A computer kit before
+                                        computers were around. It had a board with all sorts of
+                                        holes, wires, and switches, that I could use to make a
+                                        computer." </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="next display" onclick="plusSlides2(1)">&#10095;</a>
+                    </div>
+                </div>
+
+                <!--QUESTION 2-->
+                <div class = "mySlides2 fade">
+                    <div class = slide>
+                        <a class="prev display" onclick="plusSlides2(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column padright">
+                                <h2 class = "question2 ">What's left on your list of things to do this summer?</h2>
+                                <p class = date>August, 2018</p>
+                            </div>
+                            <div>
+                                <p class = counter> 6/16</p>
+                                <div class = cc-picture>
+                                    <a class="prev display2" onclick="plusSlides2(-1)">&#10094;</a>
+                                    <img class = pic src="Images/Floating Photographer/Julie & Andy Hoffman + kids.jpeg">
+                                    <a class="next display2" onclick="plusSlides2(1)">&#10095;</a>
+                                </div>
+                            </div>
+                            <div class = "column padleft">
+                                <div class = "person">
+                                    <div>
+                                        <h3 class = fp-name> Hoffman Family</h3> 
+                                        <p class = town> Swarthmore, PA</p>
+                                    </div>
+                                    <p class = response> "Getting to know
+                                        Swarthmore and walking our new puppy. We just moved from
+                                        Massachusetts." </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="next display" onclick="plusSlides2(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class = "mySlides2 fade">
+                    <div class = slide>
+                        <a class="prev display" onclick="plusSlides2(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column padright">
+                                <h2 class = "question2">What's left on your list of things to do this summer?</h2>
+                                <p class = date>August, 2018</p>
+                            </div>
+                            <div>
+                                <p class = counter> 7/16</p>
+                                <div class = cc-picture>
+                                    <a class="prev display2" onclick="plusSlides2(-1)">&#10094;</a>
+                                    <img class = pic src="Images/Floating Photographer/Jian Huang .JPG">
+                                    <a class="next display2" onclick="plusSlides2(1)">&#10095;</a>
+                                </div>
+                            </div>
+                            <div class = "column padleft">
+                                <div class = "person">
+                                    <div>
+                                        <h3 class = fp-name> Jiang Huang</h3> 
+                                        <p class = town> China</p>
+                                    </div>
+                                    <p class = response> "Conducting
+                                        research for UPenn. I'm also visiting a friend in
+                                        Boston. At the end of August, I am moving to Swarthmore
+                                        and my daughter will join me."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="next display" onclick="plusSlides2(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class = "mySlides2 fade">
+                    <div class = slide>
+                        <a class="prev display" onclick="plusSlides2(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column padright">
+                                <h2 class = question2>What's left on your list of things to do this summer?</h2>
+                                <p class = date>August, 2018</p>
+                            </div>
+                            <div>
+                                <p class = counter> 8/16</p>
+                                <div class = cc-picture>
+                                    <a class="prev display2" onclick="plusSlides2(-1)">&#10094;</a>
+                                    <img class = pic src="Images/Floating Photographer/Angela Campanella.jpeg">
+                                    <a class="next display2" onclick="plusSlides2(1)">&#10095;</a>
+                                </div>
+                            </div>
+                            <div class = "column padleft">
+                                <div class = "person">
+                                    <div>
+                                        <h3 class = fp-name> Angela Campanella</h3> 
+                                        <p class = town> Swarthmore, PA</p>
+                                    </div>
+                                    <p class = response> "Band
+                                        camp, working at Swarthmore Swim Club, and a block
+                                        party!"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="next display" onclick="plusSlides2(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class = "mySlides2 fade">
+                    <div class = slide>
+                        <a class="prev display" onclick="plusSlides2(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column padright">
+                                <h2 class = question2>What's left on your list of things to do this summer?</h2>
+                                <p class = date>August, 2018</p>
+                            </div>
+                            <div>
+                                <p class = counter> 9/16</p>
+                                <div class = cc-picture>
+                                    <a class="prev display2" onclick="plusSlides2(-1)">&#10094;</a>
+                                    <img class = pic src="Images/Floating Photographer/Annie Mutz & Carenna Cody .jpg">
+                                    <a class="next display2" onclick="plusSlides2(1)">&#10095;</a>
+                                </div>
+                            </div>
+                            <div class = "column padleft">
+                                <div class = "person">
+                                    <div>
+                                        <h3 class = fp-name> Annie Mutz</h3> 
+                                        <p class = town> Swarthmore, PA</p>
+                                    </div>
+                                    <p class = response> "Carenna (right) is
+                                        helping me clean out my garage, making room to start a
+                                        beehive. I still have to order the crates of honey
+                                        bees."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="next display" onclick="plusSlides2(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class = "mySlides2 fade">
+                    <div class = slide>
+                        <a class="prev display" onclick="plusSlides2(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column padright">
+                                <h2 class = question2>What's left on your list of things to do this summer?</h2>
+                                <p class = date>August, 2018</p>
+                            </div>
+                            <div>
+                                <p class = counter> 10/16</p>
+                                <div class = cc-picture>
+                                    <a class="prev display2" onclick="plusSlides2(-1)">&#10094;</a>
+                                    <img class = pic src="Images/Floating Photographer/Mike Cannon.JPG">
+                                    <a class="next display2" onclick="plusSlides2(1)">&#10095;</a>
+                                </div>
+                            </div>
+                            <div class = "column padleft">
+                                <div class = "person">
+                                    <div>
+                                        <h3 class = fp-name> Mike Cannon</h3> 
+                                        <p class = town> Media, PA</p>
+                                    </div>
+                                    <p class = response> "My siblings from
+                                        California are visiting soon. I'll also keep
+                                        drawing."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="next display" onclick="plusSlides2(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class = "mySlides2 fade">
+                    <div class = slide>
+                        <a class="prev display" onclick="plusSlides2(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column padright">
+                                <h2 class = question2>What's left on your list of things to do this summer?</h2>
+                                <p class = date>August, 2018</p>
+                            </div>
+                            <div>
+                                <p class = counter> 11/16</p>
+                                <div class = cc-picture>
+                                    <a class="prev display2" onclick="plusSlides2(-1)">&#10094;</a>
+                                    <img class = pic src="Images/Floating Photographer/Damon, Landon, & Lea Soeiro .JPG">
+                                    <a class="next display2" onclick="plusSlides2(1)">&#10095;</a>
+                                </div>
+                            </div>
+                            <div class = "column padleft">
+                                <div class = "person">
+                                    <div>
+                                        <h3 class = fp-name> Soeiro Family</h3> 
+                                        <p class = town> Swarthmore, PA</p>
+                                    </div>
+                                    <p class = response> "Spending a week in Yellowstone National Park. We will
+                                        stay in a cabin while going on day hikes."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="next display" onclick="plusSlides2(1)">&#10095;</a>
+                    </div>
+                </div>
+                <!--QUESTION 3-->
+                <div class = "mySlides2 fade">
+                    <div class = slide>
+                        <a class="prev display" onclick="plusSlides2(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column padright">
+                                <h2 class = question3 >Who will you be rooting for in the World Cup?</h2>
+                                <p class = date>June, 2018</p>
+                            </div>
+                            <div>
+                                <p class = counter> 12/16</p>
+                                <div class = cc-picture>
+                                    <a class="prev display2" onclick="plusSlides2(-1)">&#10094;</a>
+                                    <img class = pic src="Images/Floating Photographer/Osmond Mbaeri.JPG">
+                                    <a class="next display2" onclick="plusSlides2(1)">&#10095;</a>
+                                </div>
+                            </div>
+                            <div class = "column padleft">
+                                <div class = "person">
+                                    <div>
+                                        <h3 class = fp-name> Osmond Mbaeri</h3> 
+                                        <p class = town> Swarthmore, PA</p>
+                                    </div>
+                                    <p class = response> "Nigeria.
+                                        I grew up there until I moved to the US when I was
+                                        15."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="next display" onclick="plusSlides2(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class = "mySlides2 fade">
+                    <div class = slide>
+                        <a class="prev display" onclick="plusSlides2(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column padright">
+                                <h2 class = question3 >Who will you be rooting for in the World Cup?</h2>
+                                <p class = date>June, 2018</p>
+                            </div>
+                            <div>
+                                <p class = counter> 13/16</p>
+                                <div class = cc-picture>
+                                    <a class="prev display2" onclick="plusSlides2(-1)">&#10094;</a>
+                                    <img class = pic src="Images/Floating Photographer/Caroline Sehnaoui.JPG">
+                                    <a class="next display2" onclick="plusSlides2(1)">&#10095;</a>
+                                </div>
+                            </div>
+                            <div class = "column padleft">
+                                <div class = "person">
+                                    <div>
+                                        <h3 class = fp-name> Caroline Sehnaoui</h3> 
+                                        <p class = town> Swarthmore, PA</p>
+                                    </div>
+                                    <p class = response> "I am
+                                        excited that Switzerland tied Brazil. Although I am half
+                                        Lebanese and half French, I am cheering for Switzerland
+                                        because I lived there for many years."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="next display" onclick="plusSlides2(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class = "mySlides2 fade">
+                    <div class = slide>
+                        <a class="prev display" onclick="plusSlides2(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column padright">
+                                <h2 class = question3 >Who will you be rooting for in the World Cup?</h2>
+                                <p class = date>June, 2018</p>
+                            </div>
+                            <div>
+                                <p class = counter> 14/16</p>
+                                <div class = cc-picture>
+                                    <a class="prev display2" onclick="plusSlides2(-1)">&#10094;</a>
+                                    <img class = pic src="Images/Floating Photographer/Jerry Getz.JPG">
+                                    <a class="next display2" onclick="plusSlides2(1)">&#10095;</a>
+                                </div>
+                            </div>
+                            <div class = "column padleft">
+                                <div class = "person">
+                                    <div>
+                                        <h3 class = fp-name> Jerry Getz</h3> 
+                                        <p class = town> Swarthmore, PA</p>
+                                    </div>
+                                    <p class = response> "Now that Mexico beat Germany, I'll definitely be following them in the World Cup."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="next display" onclick="plusSlides2(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class = "mySlides2 fade">
+                    <div class = slide>
+                        <a class="prev display" onclick="plusSlides2(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column padright">
+                                <h2 class = question3 >Who will you be rooting for in the World Cup?</h2>
+                                <p class = date>June, 2018</p>
+                            </div>
+                            <div>
+                                <p class = counter> 15/16</p>
+                                <div class = cc-picture>
+                                    <a class="prev display2" onclick="plusSlides2(-1)">&#10094;</a>
+                                    <img class = pic src="Images/Floating Photographer/Saw Sal + Joe Gordon.JPG">
+                                    <a class="next display2" onclick="plusSlides2(1)">&#10095;</a>
+                                </div>
+                            </div>
+                            <div class = "column padleft">
+                                <div class = "person">
+                                    <div>
+                                        <h3 class = fp-name> Saw Sal (Left)</h3> 
+                                        <p class = town> Swarthmore, PA</p>
+                                    </div>
+                                    <p class = response> No Response</p>
+                                </div>
+                                <div class = "person">
+                                    <div>
+                                        <h3 class = fp-name> Joe Gordon (Right)</h3> 
+                                        <p class = town> Swarthmore, PA</p>
+                                    </div>
+                                    <p class = response> "Germany. I like how their
+                                        team works together and isn't about any one
+                                        player."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="next display" onclick="plusSlides2(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class = "mySlides2 fade">
+                    <div class = slide>
+                        <a class="prev display" onclick="plusSlides2(-1)">&#10094;</a>
+                        <div class = center-picture>
+                            <div class = "column padright">
+                                <h2 class = question3 >Who will you be rooting for in the World Cup?</h2>
+                                <p class = date>June, 2018</p>
+                            </div>
+                            <div>
+                                <p class = counter> 16/16</p>
+                                <div class = cc-picture>
+                                    <a class="prev display2" onclick="plusSlides2(-1)">&#10094;</a>
+                                    <img class = pic src="Images/Floating Photographer/Deirdre Abrahamsson 2.JPG">
+                                    <a class="next display2" onclick="plusSlides2(1)">&#10095;</a>
+                                </div>
+                            </div>
+                            <div class = "column padleft">
+                                <div class = "person">
+                                    <div>
+                                        <h3 class = fp-name> Deirdre Abrahamsson</h3> 
+                                        <p class = town> Wallingford, PA</p>
+                                    </div>
+                                    <p class = response> "Sweden. My husband and I raised two kids there for 7 years.
+                                        Heja Sverige!"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="next display" onclick="plusSlides2(1)">&#10095;</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section data-index = 3 id = skills class = section>
+            <h2>Skills</h2>
+            <div>
+                <ul>
+                    <h3>Proficient</h3>
+                    <p>SolidWorks</p>
+                    <p>Matlab</p>
+                    <p>Java</p>
+                    <p>Adobe Photoshop</p>
+                </ul>
+
+                <ul>
+                    <h3>Familiar</h3>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                    <p>Arduino</p>
+                </ul>
+            </div>
+            <p><b>Machine Tools:</b> Lathe, Drill Press, Band Saw, Table Saw,
+            Sand Blaster, Laser Cutting, Soldering</p>
+        </section>
+
+        <footer data-index = 4 id = "contact" class = section>
+            <h2>Contact</h2>
+            <ul>
+                <li>Email: dlott@seas.upenn.edu</li>
+                <li>Cell: (484) 502-8013</li>
+            </ul>
+
+            <a href = "Images/Dagny Lott New Resume copy.pdf" download = "Dagny Lott - Resume">
+            <button class = "btn" type = "button" >Download Resume</button>
+
+            <nav>
+                <a class = socials href = "https://www.linkedin.com/in/dagnylott/" target = "_blank">
+                    <img style = "height: 20px" src = "Images/linkedin.svg">
+                </a>
+                <a class = socials href = "https://www.facebook.com/dagny.lott" target = "_blank">
+                    <img style = "height: 20px" src =  "Images/facebook.svg">
+                </a>
+            </nav>
+
+        </footer>
+
+
+    </main>
+
+</html>
