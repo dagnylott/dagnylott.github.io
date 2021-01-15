@@ -255,6 +255,12 @@
     height: 100%;
 }
 
+#temple-allen-logo {
+    width: 50vw;
+    max-width: 500px;
+    height: 100%;
+}
+
 .video2 {
     width: 50vw;
     max-width: 500px;
@@ -825,6 +831,10 @@
       }
 
       #rocking-horse{
+          width: 100%;
+      }
+
+      #temple-allen-logo{
           width: 100%;
       }
       
