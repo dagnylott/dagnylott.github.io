@@ -579,10 +579,17 @@
     /*font-family: Oswald;*/
     color: black;
     font-size: 2rem;
-    line-height: 2;
     font-weight: 30;
     text-align: center;
-    margin: 5vh 0 3vh 0;
+    margin: 5vh 0 4vh 0;
+}
+
+.mini-section-header2 {
+    /*font-family: Oswald;*/
+    color: black;
+    font-size: 2rem;
+    font-weight: 30;
+    text-align: center;
 }
 
 .video{
