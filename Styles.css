@@ -617,6 +617,25 @@
     background-color:rgb(96, 209, 224);
 }
 
+.btn2 {
+    text-align: center;
+    vertical-align: center;
+    cursor: pointer;
+    color: white;
+    background-color:  rgba(41, 41, 41,0.9);
+    margin: 10px auto;
+    padding: 10px 20px ;
+    border:  rgba(26,26,26);
+    border-radius: 1px;
+    text-decoration: none;    
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+.btn2:hover {
+    background-color: rgba(41, 41, 41,0.8);
+}
+
 @media all and (max-width: 950px) {
     /*Slideshow 1 */
     .column1 {
