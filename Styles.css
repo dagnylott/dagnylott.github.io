@@ -56,7 +56,7 @@
 }
 
 .navbar-active {
-    background-color: purple;
+    background-color: rgb(97, 97, 97);
 }
 
 .toggle-button {
@@ -621,19 +621,20 @@
     text-align: center;
     vertical-align: center;
     cursor: pointer;
-    color: white;
-    background-color:  rgba(41, 41, 41,0.9);
+    color: black;
+    background-color:rgba(87, 190, 204);
     margin: 10px auto;
     padding: 10px 20px ;
     border:  rgba(26,26,26);
-    border-radius: 1px;
-    text-decoration: none;    
+    border-width: 10px;
+    border-radius: 4px;
+ 
     font-size: 1em;
     font-weight: lighter;
 }
 
 .btn2:hover {
-    background-color: rgba(41, 41, 41,0.8);
+    background-color:rgb(96, 209, 224);
 }
 
 @media all and (max-width: 950px) {
