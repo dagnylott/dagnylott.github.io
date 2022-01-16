@@ -62,8 +62,9 @@ function smoothScrollBottom(target,duration){
 }
 
 var about = document.querySelector('.about1');
+var gapyear = document.querySelector('.gapyear1');
 var projects = document.querySelector('.projects1');
-var photography = document.querySelector('.photography1');
+// var photography = document.querySelector('.photography1');
 var skills = document.querySelector('.skills1');
 
 
@@ -71,12 +72,12 @@ about.addEventListener('click',function(){
     smoothScrollBottom('home',1000);
 })
 
-projects.addEventListener('click',function(){
-    smoothScroll('transition-projects-pic',1000);
+gapyear.addEventListener('click',function(){
+    smoothScroll('transition-gapyear-pic',1000);
 })
 
-photography.addEventListener('click',function(){
-    smoothScroll('transition-photography-pic',1000);
+projects.addEventListener('click',function(){
+    smoothScroll('transition-projects-pic',1000);
 })
 
 skills.addEventListener('click',function(){
@@ -88,22 +89,27 @@ skills.addEventListener('click',function(){
 function scrollNavBar(i) {
     var home = document.getElementById('home');
     var about = document.getElementById('about');
-    var transition1 = document.getElementById('transition-projects-pic');
-    var transition2 = document.getElementById('transition-photography-pic');
+    var transition1 = document.getElementById('transition-gapyear-pic');
+    var transition2 = document.getElementById('transition-projects-pic');
+    var gapyear = document.getElementById('gapyear');
     var projects = document.getElementById('projects');
-    var photography = document.getElementById('photography');
+    // var photography = document.getElementById('photography');
     var skills = document.getElementById('skills');
     var contact = document.getElementById('contact')
 
     //buttons
     var about1 = document.querySelector('.about1');
+    var gapyear1 = document.querySelector('.gapyear1');
     var projects1 = document.querySelector('.projects1');
-    var photography1 = document.querySelector('.photography1');
+    // var photography1 = document.querySelector('.photography1');
     var skills1 = document.querySelector('.skills1');
 
     //get section coords on window
     var aboutTop = home.getBoundingClientRect().bottom;
     var aboutBottom = transition1.getBoundingClientRect().top - 50;
+    
+
+
     //var projectsTop = transition1.getBoundingClientRect().top;
     var projectsBottom = transition2.getBoundingClientRect().top - 50;
     //var photographyTop = photography.getBoundingClientRect().top;
@@ -118,22 +124,30 @@ function scrollNavBar(i) {
     else {
         about1.classList.remove('navbar-active');
     }
-    //Projects
+    //Gap Year
     if(aboutBottom <= 0 && projectsBottom > 0){
+        gapyear1.classList.add('navbar-active');
+    }
+    else {
+        gapyear1.classList.remove('navbar-active');
+    }
+    //Projects
+    if(projectsBottom <= 0 && skillsBottom > 0){
         projects1.classList.add('navbar-active');
     }
     else {
         projects1.classList.remove('navbar-active');
     }
-    //Other
-    if(projectsBottom <= 0 && photographyBottom > 0){
-        photography1.classList.add('navbar-active');
-    }
-    else {
-        photography1.classList.remove('navbar-active');
-    }
+    // //Other
+    // if(projectsBottom <= 0 && photographyBottom > 0){
+    //     photography1.classList.add('navbar-active');
+    // }
+    // else {
+    //     photography1.classList.remove('navbar-active');
+    // }
     //Contact
     if(photographyBottom <= 0 && skillsBottom > 0){
+        projects1.classList.remove('navbar-active');
         skills1.classList.add('navbar-active');
     }
     else {
@@ -152,7 +166,7 @@ function scrollAppear(){
     //console.log(screenPosition);
 
     if(aboutPosition < screenPosition){
-        if(aboutPosition > 50){
+        if(aboutPosition > 80){
             aboutText.classList.add('about-appear');
         }
         else {
@@ -164,6 +178,96 @@ function scrollAppear(){
     }
 }
 
+
+// Text Appears on scroll
+function scrollAppear2(){
+    var aboutText = document.querySelector('.season')
+    console.log(aboutText);
+    var aboutPosition = aboutText.getBoundingClientRect().top;
+    //console.log(aboutPosition);
+    var screenPosition = window.innerHeight/1.25;
+    //console.log(screenPosition);
+
+    if(aboutPosition < screenPosition){
+        if(aboutPosition > 80){
+            aboutText.classList.add('summer2021-appear');
+        }
+        else {
+            aboutText.classList.remove('summer2021-appear');
+        }
+    }
+    else {
+        aboutText.classList.remove('summer2021-appear');
+    }
+}
+
+// Text Appears on scroll
+function scrollAppear3(){
+    var aboutText = document.querySelector('.season2')
+    console.log(aboutText);
+    var aboutPosition = aboutText.getBoundingClientRect().top;
+    //console.log(aboutPosition);
+    var screenPosition = window.innerHeight/1.25;
+    //console.log(screenPosition);
+
+    if(aboutPosition < screenPosition){
+        if(aboutPosition > 80){
+            aboutText.classList.add('spring2021-appear');
+        }
+        else {
+            aboutText.classList.remove('spring2021-appear');
+        }
+    }
+    else {
+        aboutText.classList.remove('spring2021-appear');
+    }
+}
+
+// Text Appears on scroll
+function scrollAppear4(){
+    var aboutText = document.querySelector('.season3')
+    console.log(aboutText);
+    var aboutPosition = aboutText.getBoundingClientRect().top;
+    //console.log(aboutPosition);
+    var screenPosition = window.innerHeight/1.25;
+    //console.log(screenPosition);
+
+    if(aboutPosition < screenPosition){
+        if(aboutPosition > 80){
+            aboutText.classList.add('fall2020-appear');
+        }
+        else {
+            aboutText.classList.remove('fall2020-appear');
+        }
+    }
+    else {
+        aboutText.classList.remove('fall2020-appear');
+    }
+}
+
+// Text Appears on scroll
+function scrollAppear5(){
+    var aboutText = document.querySelector('.season4')
+    console.log(aboutText);
+    var aboutPosition = aboutText.getBoundingClientRect().top;
+    //console.log(aboutPosition);
+    var screenPosition = window.innerHeight/1.25;
+    //console.log(screenPosition);
+
+    if(aboutPosition < screenPosition){
+        if(aboutPosition > 80){
+            aboutText.classList.add('summer2020-appear');
+        }
+        else {
+            aboutText.classList.remove('summer2020-appear');
+        }
+    }
+    else {
+        aboutText.classList.remove('summer2020-appear');
+    }
+}
+
+
 function scrollAppearprev(){
     var aboutText = document.querySelector('.prev')
     console.log(aboutText);
@@ -172,7 +276,7 @@ function scrollAppearprev(){
     var screenPosition = window.innerHeight/1.25;
     //console.log(screenPosition);
 
-        if(aboutPosition > 50){
+        if(aboutPosition > 80){
             aboutText.classList.add('appearprev');
         }
         else {
@@ -188,7 +292,7 @@ function scrollAppearNext(){
     var screenPosition = window.innerHeight/1.25;
     //console.log(screenPosition);
 
-        if(aboutPosition > 50){
+        if(aboutPosition > 80){
             aboutText.classList.add('appearprev');
         }
         else {
@@ -198,6 +302,10 @@ function scrollAppearNext(){
 
 // update every time user scrolls
 window.addEventListener('scroll',scrollAppear)
+window.addEventListener('scroll',scrollAppear2)
+window.addEventListener('scroll',scrollAppear3)
+window.addEventListener('scroll',scrollAppear4)
+window.addEventListener('scroll',scrollAppear5)
 window.addEventListener('scroll',scrollAppearprev)
 window.addEventListener('scroll',scrollAppearNext)
 
