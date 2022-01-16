@@ -9,6 +9,7 @@
     </head>
 
     <main id = container>
+        <!--SECTION 1-->
         <section data-index  id = home>
             <img src="IMG_5054.JPG" alt="" class= "parallax homeParPosition">
             <div>
@@ -34,64 +35,179 @@
                 <div id = "navbar-links" ></div>
                     <ul class = links>
                         <li><a data-page = "about" class = "about1" href ="#"><p>ABOUT ME</p></a></li>
-                        <li><a data-page = "projects" class = "projects1" href ="#"><p>PROJECTS</p></a></li>
-                        <li><a data-page = "photography" class = "photography1" href ="#"><p>PHOTOGRAPHY</p></a></li>
+                        <li><a data-page = "gapyear" class = "gapyear1" href ="#"><p>GAP YEAR</p></a></li>
+                        <li><a data-page = "projects" class = "projects1" href ="#"><p>EARLY PROJECTS</p></a></li>
+                        <!-- <li><a data-page = "photography" class = "photography1" href ="#"><p>PHOTOGRAPHY</p></a></li> -->
                         <li><a data-page = "skills" class = "skills1" href ="#"><p>SKILLS & CONTACT</p></a></li>
                         <div class = "bubble"></div>
                     </ul>
                 </div>
             </nav>
         </header>
+        <!--SECTION ABOUT-->
         <section data-index = 0 id = "about" class = "section">
             <h2 class = "welcome">Hi, welcome to my website! <br> My name is Dagny.</h2>
             <div class = sub-section>
-                <img id = intro-photo-me src = "Images/IMG_3843.jpg">
-                <p id = about-me-description> I am a rising sophomore in
-                Mechanical Engineering at the University of Pennslyvania. When
-                I'm not in one of the engineering buildings, I'm probably
+                <img id = intro-photo-me src = "Images/IMG_0574.jpg">
+                <p id = about-me-description> I am currently a sophomore in
+                Mechanical Engineering at the University of Pennslyvania (returning 
+                from a gap year during 2020-21). When I'm not in one of the engineering buildings, I'm probably
                 practicing with the Women's Ultimate Frisbee team or setting up my
-                hammock on the campus lawn. I am currently taking the year
-                off from school to explore engineering and gain real-world
-                experience outside of class.
-                </br></br>
-                Website last updated: January 2021
+                hammock on the campus lawn. 
                 </p>
             </div>
-            <a href = "Dagny Lott Letter of Recommendation.pdf" download = "Endorsement Letter">
-            <button class = "btn2" type = "button" >See what my previous employer had to say about me.</button>
+            <br>
+            <a href = "Dagny Lott Letter of Recommendation.pdf" target = "blank">
+                <!-- download = "Endorsement Letter" -->
+            <button class = "btn2" type = "button" >See what a previous employer had to say about me.</button>
             </a>
         </section>
         <section>
         </section>
 
+        <br>
+        <br>
         <article>
-            <div id = transition-projects-pic data-rate = "0.3" class = "scroll">
-                <h1 class = text-wrapper>PROJECTS</h1>
+            <div id = transition-gapyear-pic data-rate = "0.3" class = "scroll">
+                <h1 class = text-wrapper>GAP YEAR</h1>
+                <div class = horizontal style = "margin: auto;">
+                    <p class = side-description4>COVID</p>
+                    <p class = side-description5>GAP YEAR</p>
+                </div>
+                <!-- <p class = side-description6> COVID GAP YEAR</p> -->
+                
+                <!-- <p class = side-description5>GAP YEAR</p> -->
             <div>
         </article>
-        <section data-index = 1 id = "projects" class = "section">
-            <!--article>
-                <h2 class = mini-section-header>Mechanical Engineer Internship</h2>
-                <div class = horizontal>
-                    <img id = temple-allen-logo src = "Temple Allen Logo Black.png">
-                    <p class = side-description3>Temple Allen industries bla
-                    blasocial distancing on flattening the curve. As shown
-                    below, my model mimicked the Post's graph and their ball
-                    simulation. The Matlab skills that I used were: modeling
-                    particle dynamics, graphics</p>
-                </div>
-            </article-->
+
+        <!--SECTION GAP YEAR-->
+        <section data-index = 1 id = "gapyear" class = "section" >
+            <br>
             <article>
-                <h2 class = mini-section-header>Matlab</h2>
-                <p class = project-description>In the spring, the Washington
+                <span class = "vertical-line"> </span>
+                <br>
+                <h2 class = "season"> Summer 2021 </h2>
+                <br>
+                <span class = "vertical-line"> </span>
+                <br>
+            </article>
+            <article >
+                <!-- <h2 class = mini-section-header>Covid Gap Year (2020-21)</h2> -->
+                <div class = gap-section>
+                    <img id = gapyearphoto src = "Images/HaleDevice.png">
+                    <!-- <span class = "vertical-line-picture"> </span> -->
+                    <div id = gap-year-description> 
+                        <p>
+                            <u> HALE THERAPEUTICS</u><br>
+                            A handheld inhalation device used to help people quit nicotine. 
+                            Helped accelerate the product through the FDA approval process and simultaneously implement
+                            new design changes to the product and assembly line. Learned a lot in a short time!
+                        </p>
+
+                    </div>
+                </div>
+            </article>
+            <article>
+                <article>
+                    <br>
+                    <span class = "vertical-line"> </span>
+                    <br>
+                    <h2 class = "season2"> Spring 2021 </h2>
+                    <br>
+                    <span class = "vertical-line"> </span>
+                    <br>
+                </article>
+                <div class = gap-section >
+                    <img id = gapyearphoto src = "Images/ColombiaSchool.jpeg">
+                    <!-- <div style = "background-color: rgb(240, 240, 240); vertical-align: middle;"> -->
+                    <div id = gap-year-description>
+                        <p >
+                            <u> M&M FAMILY SCHOOL </u><br>
+                            Farewell party after three months of teaching at the school in Colombia.
+                            Super bright students and can't wait to see what their futures hold.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <article>
+                    <br>
+                    <span class = "vertical-line"> </span>
+                    <br>
+                    <h2 class = "season3"> Fall 2020 </h2>
+                    <br>
+                    <span class = "vertical-line"> </span>
+                    <br>
+                </article>
+                <div class = gap-section>
+                    <img id = gapyearphoto src = "Images/RDTeam.png">
+                    <div id = gap-year-description> 
+                        <p><u> TEMPLE ALLEN INDUSTRIES </u><br>Temple Allen Engineering Intern Team. 
+                            Almost everyone was exclusively taking gap years and was happy
+                            to be working in-person. </p>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <article>
+                    <br>
+                    <span class = "vertical-line"> </span>
+                    <br>
+                    <h2 class = "season4"> Summer 2020 </h2>
+                    <br>
+                    <span class = "vertical-line"> </span>
+                    <br>
+                </article>
+                <!-- <h2 class = mini-section-header>Covid Gap Year (2020-21)</h2> -->
+                <div class = gap-section>
+                    <img id = gapyearphoto src = "Images/Farm.jpeg">
+                    <div id = gap-year-description>
+                        <p>
+                            <u> HAWAII COFFEE FARM</u><br>My second time volunteering on a small organic farm, 
+                        this time in Hawaii. Picture is of the view from our "outdoor" kitchen. No way of keeping the animals out!
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <br><br><br><br>
+        </section>
+
+        <!--Transition PHOTO! */-->
+        <article>
+            <div id = transition-projects-pic data-rate = "0.3" class = "scroll">
+                <h1 class = text-wrapper>EARLY PROJECTS</h1>
+                <div class = horizontal style = "margin: auto;">
+                    <p class = side-description7>EARLY PROJECTS</p>
+                </div>
+            <div>
+        </article>
+
+
+        <!--SECTION EARLY PROJECTS-->
+        <section data-index = 1 id = "projects" class = "section" >
+            <article>
+                <article>
+                    <br><br><br>
+                    <h2 class = mini-section-header4>Website</h2>
+                    <p> <i>(January 2021, Updated January 2022)</i><br><br></p>
+                    <p class = project-description>This website is coded entirely
+                    from scratch using HTML, CSS, and Javascript. I had
+                    no experience with web design before this but I was able to teach myself
+                    enough of the basics from YouTube videos and through trial &
+                    error. It's also interactive so feel free to toggle with the size of your window 
+                    to see how components change! 
+                </article>
+                <h2 class = mini-section-header4>Matlab  </h2>
+                <p> <i>(Spring 2020)</i><br><br></p>
+                <p class = project-description>At the start of the pandemic, the Washington
                 Post released a <a class = in-text-link href =
                 "https://www.washingtonpost.com/graphics/2020/world/corona-simulator/"
                 target = "_blank">model</a> that measured the effect of social
                 distancing on the spread of COVID-19. Although their model did
                 not have any scientific importance, I thought it did a great job
-                of conveying the enormous impact social distancing can have on
-                flattening the curve. My model mimicked the Post's ball
-                simulation and graphs. The Matlab skills that I used to do this
+                of conveying the large impact of social distancing on
+                flattening the curve, so I tried to mimick it in one of my classes using Matlab. 
+                The Matlab skills that I used to do this
                 were: modeling particle dynamics, graphics, real-time animation,
                 user interaction, and data analysis. I also learned how to
                 create buttons and callback functions.
@@ -127,42 +243,35 @@
                 </div>
             </article>
             <article>
-                <h2 class = mini-section-header>Laser Cutting</h2>
-                <div class = "horizontal">
-                    <img id = rocking-horse src = "Images/RockingHorse.JPG">
-                    <p class = "side-description3 margin"> I designed this
-                        rocking horse when I started to learn SolidWorks in my Introduction
-                        to Mechanical Design course. I used a laser cutter to cut
-                        clear acrylic for the horse's body and MDF for the base. The
-                        horse has three types of joints: press fittings, single-lap
-                        joints, and two t-nut/tab & slot connections. 
-                        </p>
-                </div>
-            </article>
-            <article>
-                <h2 class = mini-section-header>SolidWorks</h2>
+                <br> <br> 
+                <br>
+                <br>
+                <h2 class = mini-section-header4>SolidWorks</h2>
+                <p> <i>(Spring 2020)</i><br><br></p>
+
                 <div class= horizontal>
                     <div class = "bound">
                         <video class =  video2 autobuffer muted preload>
                             <source src= "Soap DIspenser Trimmed 2.mov" controls>
                         </video>
                     </div>
-                    <p class = side-description3> In the same course, I used
-                    SolidWorks to CAD a model of a soap dispenser. I took apart
-                    the dispenser and recorded basic measurements to ensure
-                    the proportions were right. I also incorporated the motion of the
-                    spring in my model (the video shown on the left is a
-                    SolidWorks animation).
+                    <p class = side-description3> On the left is a SolidWorks animation of a soap dispenser CAD model 
+                    that I designed for my Mechanical Design class. I took apart
+                    the dispenser, recorded basic measurements to ensure
+                    the proportions were right and I also incorporated the motion of the
+                    spring into my model.
+                    <br><br>
+                    <i> Note: Since taking this class, I have gained a lot more CAD experience, 
+                    mostly through internships as well as in class </i> 
                     <br>
-                    <br>
-                    This class was extremely helpful when it came to learning
+                    <!-- This class was extremely helpful when it came to learning
                     the basics of SolidWorks, Laser Cutting, and 3D printing.
                     Since then, I have gained a lot of experience with
                     SolidWorks during my 16-week internship at Temple Allen
                     Industries and I feel comfortable with large assembly
                     models. The projects that I completed at my internship have not been
                     released to the public yet so they won't be showcased here, but I
-                    would love to talk about them in some capacity.
+                    would love to talk about them in some capacity. -->
                     </p>
                 </div>
                 <!--horizontal>
@@ -170,34 +279,33 @@
                 </horizontal-->
             </article>
             <article>
-                <h2 class = mini-section-header>Water Show</h2>
-                <p class = project-description>In the summer of 2017 and 2018 I directed my
+                <br><br><br>
+                <h2 class = mini-section-header4>Laser Cutting</h2>
+                <p> <i>(Spring 2020)</i><br><br></p>
+                <div class = "horizontal">
+                    <img id = rocking-horse src = "Images/RockingHorse.JPG">
+                    <p class = "side-description3 margin"> I designed this
+                        rocking horse when I first started using SolidWorks and was happily 
+                        surprised by how well it turned out. I used a laser cutter to cut
+                        clear acrylic for the horse's body and MDF for the base. The
+                        horse has three types of joints (other than the bone type): press fittings, single-lap
+                        joints, and two t-nut/tab & slot connections. 
+                        </p>
+                </div>
+            </article>
+            
+            <article>
+                <br><br><br>
+                <h2 class = mini-section-header4>Water Show</h2>
+                <p> <i>(Summers 2017 & 2018)</i><br><br></p>
+                <p class = project-description>For two summers I directed my
                 local pool's Water Show – an annual theatrical play in and
-                around the pool. Yes, that means wet costumes, choreographed
-                scenes with kickboards and noodles, splashing, and of course
-                more splashing! The first show was Robin
-                Hood followed by Mulan: both experiences were as equally challenging
-                as they were rewarding. 
+                around the pool. Yes that means wet costumes, choreographed
+                scenes with kickboards and noodles, and of course
+                splashing! All-in-all, it required a great deal of preparation
+                but it was a good learning experience and a lot of fun. The first show was Robin
+                Hood followed by Mulan (pictured below).
                 <br>
-                <br>
-                I typically opened sign-ups for pool members in mid-June and
-                started developing the choreographed scenes. In early July, I
-                began leading multiple practices a week (one for each group of
-                8-10 kids) and if the kids were lucky we would wrap up the day with
-                popsicles. As practices continued, I wrote the script,
-                selected a playlist, designed costumes, purchased props, constructed
-                the set, and got lifeguards to join the cast. All of
-                these components came together in the last week of July
-                for two dress rehearsals and the final show. 
-                <br>
-                <br>
-                At the time, I knew I was gaining leadership experience
-                but it felt like none of the skills I was learning would ever
-                help me in a future engineering job. I was wrong – it required
-                the same type of problem solving. I liked to envision the
-                final stage (the product) with the characters acting out the
-                scenes (the assembly steps). 
-                 </p>
                 <div class = horizontal>
                     <img class= watershow-pic src = "Images/WaterShow/Mulan Cast.JPG">
                     <p class = "side-description ws">Some of the cast wait
@@ -220,36 +328,24 @@
                         the background.</p>
                 </div>
             </article>
-            <article>
-                <h2 class = mini-section-header>Website</h2>
-                <p class = project-description>This website is coded entirely
-                from scratch using HTML, CSS, and Javascript. Before this, I had
-                no experience with web design but I was able to teach myself
-                enough of the basics from YouTube videos and through trial &
-                error. In addition to the interactive features, I also made the
-                website responsive. See what I mean by checking out this website
-                on a smaller device or by simply adjusting the size of your web browser. 
-            </article>
-        </section>    
-        <article>
-            <div id = transition-photography-pic data-rate = "0.3" class = "scroll">
-                <h1 class = text-wrapper>PHOTOGRAPHY</h1>
-            <div>
-        </article>
-        <!--h2 class = section-header>PHOTOGRAPHY</h2-->    
-        <section data-index = 2 id = photography class = section>
+           
+        <br><br><br>
+        <article id = photography class = section>
             <article class = photography-description>
-                <h2 class = "mini-section-header margin">Photography</h2>
-                <p>*All photos on this website, except those of the Water Show, were taken by me* 
-                    <br>
-                    <br>
+                <h2 class = "mini-section-header4">Photography</h2>
+                <p> <i>(2018 and 2019)</i><br><br></p>
+                <p> 
                     I was introduced to photography during sophomore year of
                     highschool in Visual Communications class. My teacher asked
                     another student and myself to take pictures of our high
                     school graduation ceremonies and the band's performance at
                     the Eagles Half Time Show. Later, he awarded us with varsity arts
                     letters during my junior and senior year.
+                    <br>
+                    <br>
+                    <i> Note: All photos on this website, except those of the Water Show, were taken myself</i> 
                     </p>
+                    <br><br>
                 <!--p>Strath Haven Graduation Ceremony, 2018</p-->
             </article>
             <!--Slideshow 1-->
@@ -419,8 +515,7 @@
                 town center to collect responses. I really enjoyed talking to
                 people, of all ages and backgrounds, who I would not have met
                 otherwise. I haven't been doing any "official" photography
-                recently but I'm planning on pitching a similar column to the
-                UPenn newspaper when I return. </p>
+                recently but I'd love to get back into it. </p>
             </article>
             <!--Slideshow 2-->
             <article class = slideshow-container>
@@ -947,8 +1042,10 @@
                 </div>
             </article>
         </section>
+        <br><br><br>
 
         <section data-index = 3 id = skills class = section>
+            <br><br><br>
             <h2 class = mini-section-header2>Skills</h2>
             <div>
                 <ul>
@@ -965,11 +1062,13 @@
                     <p>CSS</p>
                     <p>JavaScript</p>
                     <p>Arduino</p>
+                    <p>Python</p>
                 </ul>
             </div>
             <p><b>Machine Tools:</b> Lathe, Drill Press, Band Saw, Table Saw,
-            Sand Blaster, Laser Cutting, Soldering</p>
-        </section>
+            Sand Blaster, Laser Cutting, Soldering, MTS Machine</p>
+            </article>
+            <br><br><br><br>
 
         <footer data-index = 4 id = "contact" class = section>
             <h2 class = mini-section-header2 style = "color: rgb(207, 207, 207)">Contact</h2>
@@ -978,8 +1077,9 @@
                 <li>Cell: (484) 502-8013</li>
             </ul>
 
-            <a href = "Images/Dagny Lott New Resume.pdf" download = "Dagny Lott - Resume">
-            <button class = "btn" type = "button" >Download Resume</button>
+            <a href = "Images/Dagny Lott Resume.pdf" target="_blank">
+                <!-- download = "Dagny Lott Resume" -->
+            <button class = "btn" type = "button" >View Resume</button>
 
             <nav>
                 <a class = socials href = "https://www.linkedin.com/in/dagnylott/" target = "_blank">
